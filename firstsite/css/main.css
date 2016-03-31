@@ -1,0 +1,21 @@
+h3 {
+	color:blue;
+}
+
+h2 {
+	
+}
+.tomatoe {
+	color:yellow;
+}
+
+.pop {
+	background-color: purple;
+	height: 500px;
+	width: 50%;
+	text-align: center;
+	margin: 50px 100px 50px 100;
+	border: 1px solid black;
+	padding:100px 20px 20px 10px;
+
+}

@@ -1,0 +1,418 @@
+/* =========================
+    Sitewide Styles
+   ========================*/
+
+/* interesting because it selects everything, does not seam to work maybe I did it wrong*/
+* {
+	color: #FFFFFF;
+	font-family: Quicksand,'Gothic Round', sans-serif;
+	font-size: 1.25em;
+}
+body{
+color: #FFFFFF;
+margin: 0;
+}
+sup {
+	position: relative;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: .4em;
+	left:-21px;
+	top:-8px;
+}
+
+.middle sup{
+	color: #FE7E00;
+}
+/*  emphasis words*/
+.orange {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.juice {
+	font-weight: lighter;
+	display: inline-block;
+}
+
+.middle .orange, .middle .juice {
+color: #FE7E00;
+}
+.web, .app {
+	font-weight: bold;
+	display: inline-block;
+	color: #7ACCC8;
+}
+
+
+/*==============================
+	Top Section 
+===============================*/
+.top {
+	position: static;
+	background-color: #FE7E00;
+	display: inline-block;
+	width: 100%;
+	height: 20%;
+	/*border-bottom: 5px solid #E06E18;*/
+	border: 1px solid #000;	
+}
+
+img {
+	width: 12%;
+	position: relative;
+	top: 10px;
+	left: 15px;
+	display: inline-block;
+	border-radius: 10px;
+	border: 1px solid #000;
+	}
+h1 {
+	width: 31%;
+	display:inline-block;
+	font-size: 1.11em;
+	margin:2% 0 0 10%;
+	border: 1px solid #000;
+}
+
+.topNav {
+	width: 30%;
+	float: right;
+	margin-right: 1%;
+	border: 1px solid #000;
+} 
+
+
+.topNav li {
+
+	display: inline-block;
+	/* creates 5px of padding between content and top boarder and 10px content and right border*/
+	padding: 5px 0 0 0;
+	/*aligns the contet vertically*/
+	vertical-align:bottom;
+	/*creates 5px of margin between top and right boarders and external elements.*/
+	margin: 10% 1% 5% 0;
+	/*sets font size*/
+	font-size: 11px;
+	border: 1px solid #000;
+}
+.topNav li a {
+	text-decoration: none;
+}
+/*================================
+	Middle Section - Search Box
+=================================*/
+
+.search {
+	float: right;
+  	color: #aaa;
+  	width: 25%;
+	margin-right: 4%;
+	border: 1px solid #000;
+}
+.search input {
+	
+	font-size: 16px;
+	line-height: 27px;
+	border-style: none;
+	width: 100%;
+	background: #f0f0f0;
+	border: 1px solid #000;
+}
+.search .fa-search { 
+	position: relative;
+	text-indent: 85%;
+	top: -20px;
+	left: 20px;
+	color: #aaa;
+	font-size: 16px;
+}
+.middle {
+	width: 100%;
+	color: #FE7E00;
+	display: inline-block;
+	border: 1px solid #000;
+}
+.content {	
+	height: 42%;
+ 	margin: 3% 1% 1% 1%;
+    padding: 2%;
+    border: 1px solid #000;
+
+}
+ .img img {
+ 	top: 0px;
+	width: 34%;
+	float: left;
+	margin-left: 3%;
+	border: 1px solid #000;
+
+}
+.pitch {
+	
+	width: 59%;
+	color: #FE7E00;
+	float: right;
+	margin: 0% 1% 0% 2%;
+
+	font-size: 1em;
+	font-weight: lighter;
+	border: 1px solid #000;
+	
+}
+.pitch sup {
+	left: -10px;
+}
+
+/*select elements in class .searchButton*/
+.buttons {
+		
+	text-align: center;
+
+	font-size: .8em;
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	border: 1px solid #000;
+
+}
+
+.buttons .left {
+	background-color: #FE7E00;
+	margin: 17px 6px;
+	border: 1px solid #000;
+
+}
+
+.buttons .right {
+	background-color: #7ACCC8;
+	color: #fff;
+	margin: 17px 0px; 
+	border: 1px solid #000;
+}
+/*selects buttons in elements in .searchButton classs*/
+.buttons button{
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 2px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+	
+	padding: 0 12px;
+	display: inline-block;
+	cursor: pointer;
+	width: 47%;
+	height: 40px;
+	border: 1px solid #000;
+}
+
+/*selects buttons in elements in .searchButton classs when hoverd over gives it a solid gray brdere, gray background adn a n opaque shadow*/
+.buttons button:hover {
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+}
+
+
+/*==========================================
+	Bottom Section - Site Links
+===========================================*/
+/* selects elements in class bottomLinks puts it at the bottom permenantly and it takes up the whole width of its container*/
+.bottom {
+	bottom: 0 !important;
+	margin-top: 50px;
+	background-color: #7ACCC8;
+ 	width: 100%;
+	height: 20%;
+	border: 1px solid #000;
+}
+
+
+/*===================================
+responsice desighn
+===================================*/
+
+/* responsice pitch */
+
+@media (max-width: 1418px){
+	.pitch {
+		font-size: .9em;
+	}	
+}
+@media (max-width: 1417px){
+	.pitch {
+		font-size: .8em;
+	}	 	 
+}
+@media (max-width: 1278px){
+	.pitch {
+		font-size: .8em;
+	}	  
+}
+@media (max-width: 1134px){
+	.pitch {
+		font-size: .7em;
+	}
+}
+
+@media (max-width: 994px){
+	.pitch {
+		font-size: .6em;
+	}
+}
+
+/* responsive heading */
+@media (max-width: 1403px){
+	h1 {
+		font-size: 1.10em;
+	}	  
+	.top img {
+		width: 14%;
+	}
+}
+@media (max-width: 1393px){
+	h1 {
+		font-size: 1.09em;
+	}	 	 
+}
+@media (max-width: 1391px){
+	h1 {
+		font-size: 1.07em;
+	}	  
+}
+@media (max-width: 1361px){
+	h1 {
+		font-size: 1.06em;
+	}	 
+	 
+}
+@media (max-width: 1349px){
+	h1 {
+		font-size: 1.05em;
+	}	 
+	 
+}
+@media (max-width: 1339px){
+	h1 {
+		font-size: 1.04em;
+	}	 
+	.top img {
+		width: 15%;
+		left: 14px;
+	} 
+}
+@media (max-width: 1329px){
+	h1 {
+		font-size: 1.03em;
+	}	 
+}	 
+@media (max-width: 1319px){
+	h1 {
+		font-size: 1.02em;
+	}	 
+	.top img {
+		left: 13px;
+	}
+	.topNav li {
+	font-size: 10px;
+	}
+	 
+}
+@media (max-width: 1273px){
+	h1 {
+		font-size: 1.01em;
+	}	 
+	 
+}
+@media (max-width: 1261px){
+	h1 {
+		font-size: 1.0em;
+		margin:3% 0 0 10%;
+	}		
+	.top img {
+		left: 12px;
+	} 
+}
+
+@media (max-width: 1247px){
+	h1 {
+		font-size: .9em;
+	}
+	.topNav li {
+	padding: 5px 0 0 0;
+	margin: 10px 1px 5px 0;
+	font-size: 9px;
+	}
+}
+@media (max-width: 1125px){
+	h1 {
+		font-size: .8em;
+		margin:4% 0 0 10%;
+	}
+	.top img {
+		left: 11px;
+	}
+	.topNav li {
+		
+	padding: 5px 0 0 0;
+	margin: 10px 1px 5px 0;
+	font-size: 8px;
+	}
+	
+}
+@media (max-width: 1107px)
+{
+	.top img {
+		left: 10px;
+	}
+}
+@media (max-width: 1125px)
+{
+	h1 {
+		font-size: .7em;
+	}
+}
+@media (max-width: 977px)
+{
+	.pitch {
+		font-size: .5em;
+	}
+	.topNav li {
+		display: none;
+	}
+
+}
+
+/* case studies */
+@media (max-width: 943px)
+{
+	 .buttons button .right{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

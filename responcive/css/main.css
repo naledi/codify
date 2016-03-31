@@ -1,0 +1,20 @@
+div {
+	height: 400px;
+	width: 100%;
+	background-color: blue;
+
+}
+
+@media (max-width: 600px)
+{
+	div	{
+		width: 50%;
+	}
+}
+
+@media (max-width: 200px)
+{
+	div	{
+		width: 10%;
+	}
+}
